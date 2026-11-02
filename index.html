@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>陈安 · CHEN AN · IP Portfolio / 从研究到创作</title>
+<meta name="description" content="关于 IP 帐号研究、内容策划与创作实践的一本作品集。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+<div id="scroller" aria-hidden="true"></div>
+
+<div class="stage" id="stage">
+  <div class="cam" id="cam"><div class="world" id="world"></div></div>
+</div>
+<div class="fog" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="flash" id="flash" aria-hidden="true"></div>
+
+<!-- opening UI -->
+<div class="veil" id="veil" aria-hidden="true"></div>
+<div class="bloom" id="bloom" aria-hidden="true"></div>
+<div class="hring" id="hring" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48"/><circle id="hrc" cx="50" cy="50" r="48"/></svg></div>
+<div class="open-ui" id="openUI">
+  <button class="open-btn mono" id="openBtn" type="button">按住进入 · HOLD TO ENTER</button>
+  <div class="pline" aria-hidden="true"><i id="pfill"></i></div>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#"><b class="serif">陈安</b><span class="mono">CHEN AN · 2026</span></a>
+  <span class="act-ind mono"><b id="actNo">—</b><span id="actSub">封面</span><span id="secNo">— / 12</span></span>
+  <nav aria-label="四幕导航">
+    <a href="#" data-go="1"><i class="mono">I</i>定位</a>
+    <a href="#" data-go="2"><i class="mono">II</i>研究</a>
+    <a href="#" data-go="3"><i class="mono">III</i>创作</a>
+    <a href="#" data-go="4"><i class="mono">IV</i>沉淀</a>
+  </nav>
+  <button class="sound mono" id="soundBtn" type="button" aria-pressed="false">声音 OFF</button>
+</header>
+<div class="depth mono" id="depth" aria-hidden="true"><span id="depthNo">000%</span><i><b id="depthBar"></b></i></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="原图查看" hidden>
+  <div class="lb-bar mono"><span id="lbCap"></span><button id="lbClose" type="button">关闭 ✕ <small>ESC</small></button></div>
+  <div class="lb-scroll" id="lbScroll"><img id="lbImg" alt=""></div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true">
+  <svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="46"/><circle class="ring" id="ring" cx="50" cy="50" r="46"/></svg>
+  <span class="c-label mono" id="cLabel"></span>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
