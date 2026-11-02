@@ -343,7 +343,7 @@ html.flat,.flat body{overflow-x:hidden}
 .shot .frame::before{content:attr(data-no);position:absolute;left:0;top:0;z-index:2;font:500 11px var(--mono);letter-spacing:.14em;color:#fff;background:var(--red);padding:3px 7px;opacity:0;transition:opacity .25s;pointer-events:none}
 .shot:hover .frame::before,.shot.fx .frame::before,.shot:focus-visible .frame::before{opacity:1}
 .shot:hover .frame,.shot:focus-visible .frame{outline:1px solid var(--red2)!important}
-.shot:hover{transform:none}
+.shot:hover{transform:translateZ(30px) translateY(-6px)}
 .flat .shot .frame::after{display:none}
 /* key light per act: cheap gradient layers crossfaded by opacity */
 .key{position:fixed;inset:0;z-index:3;pointer-events:none}
@@ -369,3 +369,7 @@ html.flat,.flat body{overflow-x:hidden}
 .flat .it .shot,.flat .it button{pointer-events:auto!important}
 .g-q{font-size:36px;white-space:nowrap;max-width:none;letter-spacing:.16em}.gate{width:auto;min-width:1100px}
 @media (max-width:820px){.g-q{white-space:normal;max-width:820px;font-size:40px}.gate{min-width:0;width:900px}}
+/* v8: sound toggle usable on cover */
+#soundBtn{position:fixed;top:20px;right:clamp(16px,3vw,40px);z-index:55;pointer-events:auto}
+.nav nav{margin-right:96px}
+.flat #soundBtn{position:fixed}
